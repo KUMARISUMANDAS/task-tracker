@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+      <div class="add-task">
+        <input type="text" id="taskInput" placeholder="Enter task" />
+        <button id="addButton">Add</button>
+      </div>
+      <div class="task-options">
+        <button id="completeAllButton">Complete All</button>
+        <button id="clearCompletedButton">Clear Completed</button>
+        <button id="showAllButton">Show All</button>
+        <button id="showUncompletedButton">Show Uncompleted</button>
+        <button id="showCompletedButton">Show Completed</button>
+      </div>
+      <p id="taskCount"></p>
+      <ul id="todo-list"></ul>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

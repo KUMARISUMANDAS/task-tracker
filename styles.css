@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.add-task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#addButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-options button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-options button:hover {
+  background-color: #1976d2;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: #d9d9d9;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.checkbox:checked {
+  background-color: #009688;
+  border-color: #009688;
+}
+
+.checkbox:before {
+  content: "\2713";
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.checkbox:checked:before {
+  opacity: 1;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
+}
